@@ -99,7 +99,7 @@ namespace TagLib {
       /*!
        * Returns the mime type of the object.
        */
-      String mimeType() const;
+      const String& mimeType() const;
 
       /*!
        * Sets the mime type of the object.
@@ -111,7 +111,7 @@ namespace TagLib {
        *
        * \see setFileName()
        */
-      String fileName() const;
+      const String& fileName() const;
 
       /*!
        * Sets the file name for the object.
@@ -128,7 +128,7 @@ namespace TagLib {
        * \see setTextEncoding()
        */
 
-      String description() const;
+      const String& description() const;
 
       /*!
        * Sets the content description of the object to \a desc.
@@ -149,7 +149,7 @@ namespace TagLib {
        * \see setObject()
        * \see mimeType()
        */
-      ByteVector object() const;
+      const ByteVector& object() const;
 
       /*!
        * Sets the object data to \a data.  \a data should be of the type specified in

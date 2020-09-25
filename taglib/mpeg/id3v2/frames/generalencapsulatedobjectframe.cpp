@@ -91,7 +91,7 @@ void GeneralEncapsulatedObjectFrame::setTextEncoding(String::Type encoding)
   d->textEncoding = encoding;
 }
 
-String GeneralEncapsulatedObjectFrame::mimeType() const
+const String& GeneralEncapsulatedObjectFrame::mimeType() const
 {
   return d->mimeType;
 }
@@ -101,7 +101,7 @@ void GeneralEncapsulatedObjectFrame::setMimeType(const String &type)
   d->mimeType = type;
 }
 
-String GeneralEncapsulatedObjectFrame::fileName() const
+const String& GeneralEncapsulatedObjectFrame::fileName() const
 {
   return d->fileName;
 }
@@ -111,7 +111,7 @@ void GeneralEncapsulatedObjectFrame::setFileName(const String &name)
   d->fileName = name;
 }
 
-String GeneralEncapsulatedObjectFrame::description() const
+const String& GeneralEncapsulatedObjectFrame::description() const
 {
   return d->description;
 }
@@ -121,7 +121,7 @@ void GeneralEncapsulatedObjectFrame::setDescription(const String &desc)
   d->description = desc;
 }
 
-ByteVector GeneralEncapsulatedObjectFrame::object() const
+const ByteVector& GeneralEncapsulatedObjectFrame::object() const
 {
   return d->data;
 }
